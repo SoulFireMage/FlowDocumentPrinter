@@ -89,7 +89,7 @@ namespace FlowPrinter
             if (_PrintDialog.ShowDialog() == true)
             {
                 SetupPage(document, margin, border, brush);
-                _PrintDialog.PrintDocument(_PaginatorWrapper, " ");
+                _PrintDialog.PrintDocument(_PaginatorWrapper, "New File.pdf");
 
         }
     }

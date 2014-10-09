@@ -4,6 +4,8 @@ using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Media;
 //using System.Windows.Media;
+//TODO:Parameterise Heading, Footing
+//TODO:re add overloads taken out during C# conversion
 //TODO:Fix The HardCoded Fonts
 public class PrintPaginatorWrapper : DocumentPaginator
 {
@@ -72,7 +74,7 @@ public class PrintPaginatorWrapper : DocumentPaginator
 
     private DrawingVisual LayoutHeadingandNumbering(int pageNumber)
     {
-        return LayoutHeadingAndNumber(pageNumber, " ", 22, System.Windows.Media.Brushes.Blue);
+        return LayoutHeadingAndNumber(pageNumber, "Heading Demo ", 22, System.Windows.Media.Brushes.Blue);
 
     }
 
